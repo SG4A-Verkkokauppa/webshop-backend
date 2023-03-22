@@ -35,4 +35,63 @@ insert into product (name, price,category_id) values ('Test shoe 2',20,1);
 
 -- tähän päättyy malli lauseet
 
+ --Ajetut taulut
+Tuotteet-taulu:*/
+
+CREATE TABLE Tuotteet (
+tuotteen_id INT PRIMARY KEY,
+tuotteen_nimi VARCHAR(255),
+tuotteen_kuvaus TEXT,
+hinta DECIMAL(10,2),
+varastosaldo INT
+);
+
+
+/*
+Tuoteryhma-taulu:
+*/
+CREATE TABLE Tuoteryhma (
+tuoteryhma_id INT PRIMARY KEY,
+tuoteryhma_nimi VARCHAR(255)
+);
+
+
+/*
+Asiakkaat-taulu:
+*/
+CREATE TABLE Asiakkaat (
+  asiakas_id INT AUTO_INCREMENT PRIMARY KEY,
+  etunimi VARCHAR(255),
+  sukunimi VARCHAR(255),
+  sahkoposti VARCHAR(255),
+  puhelinnumero VARCHAR(20)
+);
+
+/*
+Tilaus-taulu:
+*/
+CREATE TABLE Tilaus (
+tilaus_id INT PRIMARY KEY,
+asiakas_id INT,
+tilauspaivays DATE,
+toimitusosoite TEXT,
+maksutapa VARCHAR(50),
+FOREIGN KEY (asiakas_id) REFERENCES Asiakkaat(asiakas_id)
+);
+
+/*
+Tilausrivi-taulu:
+*/
+CREATE TABLE Tilausrivi (
+tilausrivi_id INT PRIMARY KEY,
+tilaus_id INT,
+tuotteen_id INT,
+maara INT,
+hinta DECIMAL(10,2),
+FOREIGN KEY (tilaus_id) REFERENCES Tilaus(tilaus_id),
+FOREIGN KEY (tuotteen_id) REFERENCES Tuotteet(tuotteen_id)
+);
+
+
+ --Tuotteen lisäys tuoteryhmaan
 INSERT INTO Tuoteryhma (tuoteryhma_id, tuoteryhma_nimi) VALUES (7,'T-paita');
