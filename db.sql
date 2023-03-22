@@ -8,7 +8,7 @@ CREATE TABLE testi (
 INSERT INTO testi (name) VALUES ('Testi1');
 INSERT INTO testi (name) VALUES ('Testi2');
 
- --tämä on malli lause
+ --tästä alkaa malli lauseet
 create table category (
   id int primary key auto_increment,
   name varchar(50) not null
