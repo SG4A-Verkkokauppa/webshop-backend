@@ -107,3 +107,10 @@ VALUES (102, 'Maagista Paita', 'Tässä on maaginen paita', 10, 3, 7);
 
 DELETE FROM Tuotteet
 WHERE tuotteen_id = 102;
+
+UPDATE Tuoteryhma SET tuoteryhma_nimi = 'Vaatteet' WHERE tuoteryhma_id = 7;
+
+INSERT INTO Tuoteryhma (tuoteryhma_id, tuoteryhma_nimi) VALUES (8,'Keittio tarvikkeet');
+
+INSERT INTO Tuoteryhma (tuoteryhma_id, tuoteryhma_nimi) VALUES (9,'Muut tuotteet');
+
