@@ -102,7 +102,8 @@ FOREIGN KEY (tuotteen_id) REFERENCES Tuotteet(tuotteen_id)
 INSERT INTO Tuoteryhma (tuoteryhma_id, tuoteryhma_nimi) VALUES (7,'T-paita');
 
 -- Tuotteen lisäys tuotteet tauluun:
-INSERT INTO Tuotteet (tuotteen_id, tuotteen_nimi, tuotteen_kuvaus, hinta, varastosaldo, tuoteryhma_id) VALUES (102, 'Maagista Paita', 'Tässä on maaginen paita', 10, 3, 7);
+INSERT INTO Tuotteet (tuotteen_id, tuotteen_nimi, tuotteen_kuvaus, hinta, varastosaldo, tuoteryhma_id) 
+VALUES (102, 'Maagista Paita', 'Tässä on maaginen paita', 10, 3, 7);
 
 DELETE FROM Tuotteet
 WHERE tuotteen_id = 102;
