@@ -112,5 +112,7 @@ UPDATE Tuoteryhma SET tuoteryhma_nimi = 'Vaatteet' WHERE tuoteryhma_id = 7;
 
 INSERT INTO Tuoteryhma (tuoteryhma_id, tuoteryhma_nimi) VALUES (8,'Keittio tarvikkeet');
 
+UPDATE Tuoteryhma SET tuoteryhma_nimi = 'Keittiö tarvikkeet' WHERE tuoteryhma_id = 8;
+
 INSERT INTO Tuoteryhma (tuoteryhma_id, tuoteryhma_nimi) VALUES (9,'Muut tuotteet');
 
