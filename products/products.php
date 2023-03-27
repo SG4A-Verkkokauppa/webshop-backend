@@ -3,9 +3,16 @@ require_once "../inc/functions.php";
 require_once "../inc/headers.php";
 // Tuotteiden näyttäminen tuoteryhmän perusteella:
 
-$uri = parse_url(filter_input(INPUT_SERVER,'PATH_INFO'),PHP_URL_PATH);
-$parameters = explode('/', $uri);
-$tuoteryhma_id = $parameters[7]; // Koodi toimii jos tästä poistaa parameters ja laittaa pelkän seiskan.
+$url = $_SERVER['REQUEST_URI'];
+$parameters = explode('/', $url);
+$tuoteryhma_id = $parameters[3];
+
+//$tuoteryhma_id = $parameters[3];
+
+//print_r($url);
+//print_r($parameters);
+//print $tuoteryhma_id;
+
 
 try {
     $db = openDb();
