@@ -2,9 +2,9 @@
 require_once '../inc/functions.php';
 require_once '../inc/headers.php';
 
-$uri = parse_url(filter_input(INPUT_SERVER,'PATH_INFO'),PHP_URL_PATH);
-$parameters = explode('/',$uri);
-$tuotteen_id = $parameters[1];
+$url = $_SERVER['REQUEST_URI'];
+$parameters = explode('/', $url);
+$tuotteen_id = $parameters[3];
 
 try {
   $db = openDb();
