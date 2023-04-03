@@ -149,4 +149,5 @@ UPDATE Tuoteryhma SET tuoteryhma_nimi = 'Keittiö tarvikkeet' WHERE tuoteryhma_i
 
 INSERT INTO Tuoteryhma (tuoteryhma_id, tuoteryhma_nimi) VALUES (9,'Muut tuotteet');
 
+ --testikuva images kansioon
 UPDATE Tuotteet SET kuva = 'musta parkkikiekko.jpg' WHERE tuotteen_id = 106;
