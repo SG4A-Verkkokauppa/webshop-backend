@@ -151,3 +151,4 @@ INSERT INTO Tuoteryhma (tuoteryhma_id, tuoteryhma_nimi) VALUES (9,'Muut tuotteet
 
  --testikuva images kansioon
 UPDATE Tuotteet SET kuva = 'musta parkkikiekko.jpg' WHERE tuotteen_id = 106;
+UPDATE Tuotteet SET kuva = 'pinkki-glitter-muki.png' WHERE tuotteen_id = 104;
