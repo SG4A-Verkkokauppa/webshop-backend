@@ -83,7 +83,25 @@ INSERT INTO Tuotteet (tuotteen_nimi, tuotteen_kuvaus, hinta, varastosaldo, tuote
 
 INSERT INTO Tuotteet (tuotteen_nimi, tuotteen_kuvaus, hinta, varastosaldo, tuoteryhma_id, kuva) VALUES ('Maaginen pyyhekumi', 'Jotta voit pyyhkiä ylimääräisen magian!', 2, 93, 3, NULL);
 
--- Testi kuvien lisäys:
-UPDATE Tuotteet SET kuva = 'musta parkkikiekko.jpg' WHERE tuotteen_id = 10;
+-- Tuotekuvien lisäys:
+UPDATE Tuotteet SET kuva = 'parkkikiekko-pinkki-muumilimu.png' WHERE tuotteen_id = 10;
 
-UPDATE Tuotteet SET kuva = 'pinkki-glitter-muki.png' WHERE tuotteen_id = 5;
+UPDATE Tuotteet SET kuva = 'muki-pinkki-maaginen.png' WHERE tuotteen_id = 5;
+
+UPDATE Tuotteet SET kuva = 'muki-kultainen-maaginen.png' WHERE tuotteen_id = 6;
+
+UPDATE Tuotteet SET kuva = 'kangaskassi-musta-fork.png' WHERE tuotteen_id = 9;
+
+UPDATE Tuotteet SET kuva = 'kangaskassi-musta-maaginen.png' WHERE tuotteen_id = 8;
+
+UPDATE Tuotteet SET kuva = 'paita-pinkki-maaginen.png' WHERE tuotteen_id = 1;
+
+UPDATE Tuotteet SET kuva = 'paita-sininen-fork.png' WHERE tuotteen_id = 2;
+
+UPDATE Tuotteet SET kuva = 'pipo-musta-fork.png' WHERE tuotteen_id = 4;
+
+UPDATE Tuotteet SET kuva = 'pipo-musta-maaginen.png' WHERE tuotteen_id = 3;
+
+UPDATE Tuotteet SET kuva = 'pyyhe-pinkki-maaginen.png' WHERE tuotteen_id = 7;
+
+UPDATE Tuotteet SET kuva = 'pyyhekumi-pinkki-maaginen.png' WHERE tuotteen_id = 11;
