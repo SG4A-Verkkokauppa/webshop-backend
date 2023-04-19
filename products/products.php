@@ -5,7 +5,7 @@ require_once "../inc/headers.php";
 
 $url = $_SERVER['REQUEST_URI'];
 $parameters = explode('/', $url);
-$tuoteryhma_id = $parameters[3];
+$tuoteryhma_id = $parameters[count($parameters)-1];
 
 //$tuoteryhma_id = $parameters[3];
 
