@@ -105,3 +105,8 @@ UPDATE Tuotteet SET kuva = 'pipo-musta-maaginen.png' WHERE tuotteen_id = 3;
 UPDATE Tuotteet SET kuva = 'pyyhe-pinkki-maaginen.png' WHERE tuotteen_id = 7;
 
 UPDATE Tuotteet SET kuva = 'pyyhekumi-pinkki-maaginen.png' WHERE tuotteen_id = 11;
+
+ --testi taulun poisto
+
+ DELETE FROM tuoteryhma
+ WHERE tuoteryhma_nimi = 'Testi';
