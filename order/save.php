@@ -17,7 +17,7 @@ try{
     $db = openDb();
     $db->beginTransaction();
 
-    $sql = "INSERT INTO Asiakas (etunimi, sukunimi, osoite, postinumero, postitoimipaikka) values('".
+    $sql = "INSERT INTO Asiakas (etunimi, sukunimi, toimitusosoite, postinumero, postitoimipaikka) values('".
         filter_var($fname,FILTER_SANITIZE_FULL_SPECIAL_CHARS) . "','".
         filter_var($lname,FILTER_SANITIZE_FULL_SPECIAL_CHARS) . "','".
         filter_var($address,FILTER_SANITIZE_FULL_SPECIAL_CHARS) . "','".
@@ -35,7 +35,7 @@ try{
         .
 
             $order_id . "," .
-            $product->id
+            $product->tuotteen_id
         .")";
         executeInsert($db,$sql);
     }
