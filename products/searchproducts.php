@@ -4,7 +4,7 @@ require_once '../inc/headers.php';
 
 $url = $_SERVER['REQUEST_URI'];
 $parameters = explode('/', $url);
-$pharase = $parameters[3];
+$phrase = $parameters[3];
 
 
 try {
