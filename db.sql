@@ -55,6 +55,8 @@ INSERT INTO Tuoteryhma (tuoteryhma_nimi) VALUES ('Vaatteet');
 INSERT INTO Tuoteryhma (tuoteryhma_nimi) VALUES ('Keittiö tarvikkeet');
 INSERT INTO Tuoteryhma (tuoteryhma_nimi) VALUES ('Muut tuotteet');
 
+UPDATE Tuoteryhma SET tuoteryhma_nimi = 'Keittiötarvikkeet' WHERE tuoteryhma_id = 2;
+
 -- Tuotteiden lisäys:
 
 -- Vaatteet:
